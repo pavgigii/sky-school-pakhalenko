@@ -5,20 +5,72 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Moto landing</title>
+  <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
 
-  <h1>Это мой первый репозиторий</h1>
+  <header class="header">
+    <a href="#" class="logo">MotoShop</a>
 
-  <ul>
-    <li>Lorem, ipsum.</li>
-    <li>Beatae, quisquam!</li>
-  </ul>
+    <nav class="menu">
+      <ul>
+        <li><a href="#moto">Мото</a></li>
+        <li><a href="#options">Характеристики</a></li>
+        <li><a href="#order">Предзаказ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo exercitationem distinctio consectetur nihil est architecto, repellendus id veniam quia fuga delectus ab non ipsa nesciunt voluptatum quaerat molestias inventore.</p>
+  <main class="main">
 
+    <section class="desc" id="moto">
+      <img src="" alt="" class="desc-img">
+      <h1 id="title" class="desc-title ">Motorola DynaTAC 8000X</h1>
+      <p class="desc-text">Первый в мире переносной телефон. До 30 минут разговора без проводов в любое время, в любом
+        месте благодаря емкому аккумулятору.</p>
+      <span class="desc-price">$3,995</span>
+      <a href="#" class="btn">Оформить предзаказ</a>
+    </section>
+
+    <section class="lead">
+      <h2 class="lead-title">Motorola DynaTAC 8000X</h2>
+      <p class="lead-text">Пожалуй лучший способ заслужить завистливые взгляды</p>
+    </section>
+
+    <section class="options" id="options">
+      <h2 class="options-title">Характеристики телефона</h2>
+      <ul class="options-list">
+        <li class="options-item">
+          <h3 class="options-caption">Монохромный дисплей</h3>
+          <p class="options-text">Видите номер при наборе - исключена ошибка позвонить не туда</p>
+        </li>
+        <li class="options-item">
+          <h3 class="options-caption">Всегда на связи</h3>
+          <p class="options-text">До 30 минут разговора и до 8 часов в режиме ожидания</p>
+        </li>
+        <li class="options-item">
+          <h3 class="options-caption">Удивительные возможности</h3>
+          <p class="options-text">Записаная книжка на 30 номеров и функция повторения последнего вызова</p>
+        </li>
+        <li class="options-item">
+          <h3 class="options-caption">Компактный</h3>
+          <p class="options-text">DynaTAC 8000X удобно держать в руках - ширина корпуса 38мм, а вес всего 793 грамма</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="order" id="order">
+      <p class="order-text">Оформи предзаказ и получи дополнительную съемную батарею в подарок</p>
+      <button class="btn">Оформить предзаказ</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
 </body>
 
 </html>
