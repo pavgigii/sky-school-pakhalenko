@@ -1,0 +1,23 @@
+header {
+  color:lightblue;
+  font-style: italic;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.btn {
+  font-size: 28;
+  border-color:     hsl(245, 100%, 30%);
+  color:            hsl(245, 100%, 50%);
+  background-color: hsl(244, 55%, 65%)
+}
+
+h1 {
+  color:blue;
+}
+
+h2 {
+  color:blue;
+}
