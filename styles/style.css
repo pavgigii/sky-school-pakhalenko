@@ -111,3 +111,24 @@ h3 {
   line-height: 140%;
 }
 
+/* lead block */
+
+/* footer */
+
+.footer {
+  background-color: #060D10;
+}
+
+.text-join {
+  font-size: 20px;
+  line-height: 167%;
+
+  color: #FFFFFF;
+}
+
+.text-footer {
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #FFFFFF;
+}
