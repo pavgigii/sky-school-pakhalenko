@@ -2,30 +2,41 @@
 
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v25-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* montserrat-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/montserrat-v25-latin-500.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* oswald-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/oswald-v49-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/oswald-v49-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/oswald-v49-latin-500.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/oswald-v49-latin-500.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* body */
@@ -33,6 +44,8 @@
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
+
+  color: #060D10;
 }
 
 /* header */
@@ -44,13 +57,67 @@ header {
 .menu .btn {
   font-size: 24px;
   line-height: 29px;
-  color: #060D10;
+
+  text-decoration: none;
 }
 
 .menu .number {
   font-size: 28px;
   line-height: 34px;
-  color: #060D10;
+
+  text-decoration: none;
 }
 
+/* main */
+
 /* promo */
+
+h1 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 89px;
+
+  color: #FFFFFF;
+
+  text-shadow: 1px 1px 2px #060D10;
+}
+
+.promo p {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+
+  color: #FFFFFF;
+
+  text-shadow: 1px 1px 2px #060D10;
+}
+
+/* services */
+
+h2 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+
+  text-transform:uppercase
+}
+h3 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 53px;
+
+  text-transform: uppercase;
+}
+
+.services-text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+
+}
