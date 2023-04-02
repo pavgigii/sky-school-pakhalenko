@@ -1,23 +1,56 @@
+/* fonts */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v25-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/oswald-v49-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/oswald-v49-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* body */
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+}
+
+/* header */
+
 header {
-  color:lightblue;
-  font-style: italic;
+  background: #66D1FF;
 }
 
-.logo {
-  font-size: 32px;
+.menu .btn {
+  font-size: 24px;
+  line-height: 29px;
+  color: #060D10;
 }
 
-.btn {
-  font-size: 28;
-  border-color:     hsl(245, 100%, 30%);
-  color:            hsl(245, 100%, 50%);
-  background-color: hsl(244, 55%, 65%)
+.menu .number {
+  font-size: 28px;
+  line-height: 34px;
+  color: #060D10;
 }
 
-h1 {
-  color:blue;
-}
-
-h2 {
-  color:blue;
-}
+/* promo */
