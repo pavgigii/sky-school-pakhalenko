@@ -38,6 +38,12 @@ body {
   color: #060D10;
 }
 
+.container {
+  width: 1278px;  /* ширина контента по figma */
+  margin: 0 auto; /* убираем внешние границы страницы сверху и ставим автомат для лево\право */
+
+}
+
 /* header */
 
 header {
@@ -61,35 +67,34 @@ header {
 /* main */
 
 /* promo */
-
 h1 {
   font-family: 'Oswald', 'sans-serif';
-  font-style: normal;
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
-
   color: #FFFFFF;
-
+  text-shadow: 1px 1px 2px #060D10;
+}
+.promo p {
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
   text-shadow: 1px 1px 2px #060D10;
 }
 
-.promo p {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 39px;
-
-  color: #FFFFFF;
-
-  text-shadow: 1px 1px 2px #060D10;
+.promo {
+  padding: 260px 0; /* значение полей вокруг содержимого элемента. */
+  text-align: center; /*горизонтальное выравнивание текста*/
+  background: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)), url(../images/bg-promo.jpg);
+  background-size: cover; /* масштабирует фоновое изображение, согласно заданным размерам. */
+  background-repeat: no-repeat; /* устанавливает одно фоновое изображение в элементе без его повторений */
+  background-position: center;  /*начальное положение фонового изображения */
 }
 
 /* services */
 
 h2 {
   font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
   font-size: 48px;
   line-height: 80px;
 
@@ -97,8 +102,6 @@ h2 {
 }
 h3 {
   font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
   font-size: 32px;
   line-height: 53px;
 
@@ -112,6 +115,8 @@ h3 {
 }
 
 /* lead block */
+
+
 
 /* footer */
 
