@@ -29,6 +29,12 @@
        url('../fonts/oswald-v49-cyrillic_latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+* {
+  box-sizing: border-box; /*Применяется для изменения алгоритма расчёта ширины и высоты элемента.*/
+}
+
+
+
 /* body */
 
 body {
@@ -44,18 +50,62 @@ body {
 
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+
+.btn-lead {
+  min-width: 505px;
+  padding: 17px;
+  border: 3px solid #060D10;
+  border-radius: 4px;
+}
+
+
+
 /* header */
 
-header {
-  background: #66D1FF;
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.menu .btn {
+.header {
+  background: #66D1FF;
+  padding: 31px 0;
+}
+
+.btn-header {
   font-size: 24px;
   line-height: 29px;
-
-  text-decoration: none;
+  min-width: 276px;
+  padding: 6px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
 }
+
+
+.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 
 .menu .number {
   font-size: 28px;
@@ -63,8 +113,6 @@ header {
 
   text-decoration: none;
 }
-
-/* main */
 
 /* promo */
 h1 {
@@ -92,7 +140,6 @@ h1 {
 }
 
 /* services */
-
 h2 {
   font-family: 'Oswald';
   font-size: 48px;
@@ -107,11 +154,19 @@ h3 {
 
   text-transform: uppercase;
 }
-
 .services-text {
   font-weight: 400;
   font-size: 26px;
   line-height: 140%;
+}
+
+.services-wrap {
+  display: flex;
+  text-align: center;
+}
+
+.services-fade {
+  align-self: center;
 }
 
 /* lead block */
