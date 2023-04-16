@@ -144,9 +144,10 @@ h1 {
   background: rgba(102, 209, 255, .1);
 }
 
-.services-title {
+h2 {
   text-align: center;
   font-family: 'Oswald';
+  font-weight: 500;
   font-size: 48px;
   line-height: 80px;
   text-transform:uppercase
@@ -191,16 +192,10 @@ h3 {
   padding: 180px 0;
 }
 
-.lead-block-text{
-  text-align: center;
-  font-family: 'Oswald';
-  font-size: 48px;
-  line-height: 80px;
-  text-transform:uppercase
-}
 
 .btn-lead {
   display: block;
+  min-width: 505px;
   margin: 60px auto 0;
   font-weight: 500;
   font-size: 36px;
@@ -213,7 +208,6 @@ h3 {
   list-style: none;
   padding-top: 130px;
 }
-
 
 
 
@@ -242,14 +236,25 @@ h3 {
 
 .social {
   margin: 0;
-  padding: 50;
   display: flex;
+  align-items: center;
   list-style: none;
 }
 
 .social li {
   padding-left: 20px;
 }
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
 
 .copyright {
   margin-left: auto;
