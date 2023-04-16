@@ -31,6 +31,8 @@
 
 * {
   box-sizing: border-box; /*Применяется для изменения алгоритма расчёта ширины и высоты элемента.*/
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -40,7 +42,6 @@
 body {
   font-family: 'Montserrat', 'sans-serif';
   font-weight: 500;
-
   color: #060D10;
 }
 
@@ -48,7 +49,6 @@ body {
   width: 1278px;  /* ширина контента по figma */
   margin: 0 auto; /* убираем внешние границы страницы сверху и ставим автомат для лево\право */
   border: 1px solid red;
-
 }
 
 img {
@@ -110,6 +110,15 @@ a {
 }
 
 /* promo */
+.promo {
+  padding: 260px 0; /* значение полей вокруг содержимого элемента. */
+  text-align: center; /*горизонтальное выравнивание текста*/
+  background: linear-gradient(0deg, rgba(6, 13, 16, .25), rgba(6, 13, 16, .25)), url(../images/bg-promo.jpg);
+  background-size: cover; /* масштабирует фоновое изображение, согласно заданным размерам. */
+  background-repeat: no-repeat; /* устанавливает одно фоновое изображение в элементе без его повторений */
+  background-position: center;  /*начальное положение фонового изображения */
+}
+
 h1 {
   font-family: 'Oswald', 'sans-serif';
   font-weight: 500;
@@ -118,24 +127,25 @@ h1 {
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #060D10;
 }
-.promo p {
+.promo-text {
   font-size: 32px;
   line-height: 39px;
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #060D10;
+  margin-top: 60px;
 }
 
-.promo {
-  padding: 260px 0; /* значение полей вокруг содержимого элемента. */
-  text-align: center; /*горизонтальное выравнивание текста*/
-  background: linear-gradient(0deg, rgba(6, 13, 16, 0.25), rgba(6, 13, 16, 0.25)), url(../images/bg-promo.jpg);
-  background-size: cover; /* масштабирует фоновое изображение, согласно заданным размерам. */
-  background-repeat: no-repeat; /* устанавливает одно фоновое изображение в элементе без его повторений */
-  background-position: center;  /*начальное положение фонового изображения */
-}
+
 
 /* services */
-h2 {
+
+.services {
+  padding: 170px 0;
+  background: rgba(102, 209, 255, .1);
+}
+
+.services-title {
+  text-align: center;
   font-family: 'Oswald';
   font-size: 48px;
   line-height: 80px;
@@ -146,9 +156,9 @@ h3 {
   font-family: 'Oswald';
   font-size: 32px;
   line-height: 53px;
-
   text-transform: uppercase;
 }
+
 .services-text {
   font-weight: 400;
   font-size: 26px;
@@ -157,22 +167,58 @@ h3 {
 
 .services-wrap {
   display: flex;
-  text-align: center;
-  padding: 170px 81px;
 }
 
-.services-fade {
-  align-self: center;
+.services-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
+.services-item {
+  margin-top: 70px;
+  flex-basis: 33.33%;
+  padding-right: 30px;
+}
 
 
 
 /* lead block */
 
-.lead-wrap {
-  display: flex;
+.lead-block {
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, .1) 43.86%);
+  padding: 180px 0;
 }
+
+.lead-block-text{
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 48px;
+  line-height: 80px;
+  text-transform:uppercase
+}
+
+.btn-lead {
+  display: block;
+  margin: 60px auto 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.lead-list-media{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-top: 130px;
+}
+
+
+
+
+
+
 
 /* footer */
 .footer {
